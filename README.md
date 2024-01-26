@@ -1,3 +1,5 @@
+
+## Init
 resourceGroupName='rgCosmosDBDemo'
 accountName='catcosmosdbdemo'
 databaseName='ecommerce'
@@ -14,5 +16,5 @@ az cosmosdb sql database create -a $accountName -g $resourceGroupName -n $databa
 az cosmosdb sql container create -a $accountName -g $resourceGroupName -d $databaseName -n $containerName -p $partitionKey --throughput $throughput
 
 
-# Error: AttributeError: 'NoneType' object has no attribute 'ConsistencyPolicy'?
+## Error: AttributeError: 'NoneType' object has no attribute 'ConsistencyPolicy'?
 sudo hwclock -s
